@@ -41,7 +41,18 @@ This is an implementation for High-Level Synthesis that recognizes the LED color
    |   2    |   Yellow  |
    |   1    |    Red    |
    |   0    |     Color recognition failed due to no detection    |
- 
+
+## Hardware circuit generation on Vivado
+1. Export RTL as IP from Vitis HLS  
+2. Create Block Design  
+  Add ZYNQ PS, DMA Controller, and Traffic Light Recognition IP to the block design file. Then configure the IP core settings: For ZYNQ PS, enable one GP port (master) and one HP port (slave). For DMA Controller, disable `Scatter Gather Engine` and `Write Channel` and set `Width of Buffer Length Register` to 26. In addition, set `Memory Map Data Width` and `Stream Data Width` of the Read Channel to 32. Finally, connect the blocks together with `Run Block Automation` and `Run Connection Automation`. The block design will be as follows: 
+   ![block_design](https://user-images.githubusercontent.com/8480644/204107024-887ac390-9fc7-4458-a1c4-7cc8432aefd5.png)
+
+  
+3. Generate Bitstream  
+  The hardware utilization after implementation for K26 is as follows:  
+  ![hardware_utilization](https://user-images.githubusercontent.com/8480644/204107145-6f5369dc-da89-4cee-ba6b-89b8107b3f5d.png)
+
 ## License
 Available under The 3-Clause BSD License.  
 
