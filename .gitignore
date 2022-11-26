@@ -1,0 +1,4 @@
+*.log
+*.str
+*.jou
+traffic_light_recognition_vitis_hls/
