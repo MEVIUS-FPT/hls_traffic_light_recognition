@@ -12,7 +12,7 @@ This is an implementation for High-Level Synthesis that recognizes the LED color
 ## How to run C simulation on Vitis HLS
 1. Clone this repository  
    ```
-   git clone git@github.com:DYGV/hls_traffic_light_recognition.git -b v1.0
+   git clone git@github.com:DYGV/hls_traffic_light_recognition.git -b v1.1
    ```
 2. Create Vitis HLS project  
    The following command will generate a directory about the project named *traffic_light_recognition_vitis_hls/* by Vitis HLS.
