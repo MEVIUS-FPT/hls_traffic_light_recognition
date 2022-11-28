@@ -1,5 +1,5 @@
 # Traffic Light Recognition with HLS Implementation
-This is an implementation for High-Level Synthesis that recognizes the LED color of the traffic light using a traffic light detection algorithm[1]. Commits on the master branch (a.k.a. main branch) may not match the contents of this *README*. Please refer to [release tags](https://github.com/DYGV/hls_traffic_light_recognition/releases) for exact information.  
+This is an implementation for High-Level Synthesis that recognizes the LED color of the traffic light using a traffic light detection algorithm[1]. This repository explains how to run C simulation, how to generate Bitstream, and how to run the generated circuit. Commits on the master branch (a.k.a. main branch) may not match the contents of this *README*. Please refer to [release tags](https://github.com/DYGV/hls_traffic_light_recognition/releases) for exact information.  
 
 ## Tested Environment
 - Vitis HLS 2022.1
@@ -13,7 +13,7 @@ This is an implementation for High-Level Synthesis that recognizes the LED color
 ## How to run C simulation on Vitis HLS
 1. Clone this repository  
    ```
-   git clone git@github.com:DYGV/hls_traffic_light_recognition.git -b v1.1
+   git clone git@github.com:DYGV/hls_traffic_light_recognition.git -b v1.2
    ```
 2. Create Vitis HLS project  
    The following command will generate a directory about the project named *traffic_light_recognition_vitis_hls/* by Vitis HLS.
