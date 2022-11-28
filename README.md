@@ -6,6 +6,7 @@ This is an implementation for High-Level Synthesis that recognizes the LED color
 - Vivado 2022.1
 - OpenCV 4.4.0 (Used for test bench only in Vitis HLS)
 - Kria KV260 Vision AI Starter Kit
+  - [2022.1 Boot FW Update](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/1641152513/Kria+K26+SOM#Boot-Firmware-Updates)
   - [Ubuntu 22.04](https://ubuntu.com/download/amd-xilinx)
   - [Kria-PYNQ v3.0](https://github.com/Xilinx/Kria-PYNQ/releases/tag/v3.0)  
 
