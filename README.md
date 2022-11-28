@@ -54,6 +54,19 @@ This is an implementation for High-Level Synthesis that recognizes the LED color
   The hardware utilization after implementation for K26 is as follows:  
   ![hardware_utilization](https://user-images.githubusercontent.com/8480644/204107145-6f5369dc-da89-4cee-ba6b-89b8107b3f5d.png)
 
+## Traffic light recognition with PYNQ on your board
+After generating Bitstream, let's see how it works on your board. This section must be run on the FPGA board.  
+1. Upload necessary files to jupyter notebook server  
+  The required files are as follows:  
+     * Generated `.bit` and `.hwh`  
+     * [sample notebook](./notebook/sample.ipynb)  
+     * Input Image  
+       [Images used in C Simulation](./image/README.md) can be used
+2. Edit Notebook   
+  The path to the `.bit` and the path to the input image are hard-coded, so please make the appropriate settings in your environment.  
+3. Run  
+  The filename of input images and the resulting values as described in the C simulation section will be output.  
+
 ## License
 Available under The 3-Clause BSD License.  
 
